@@ -1,4 +1,7 @@
 <?php
+    header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
+    header("X-Content-Type-Options: nosniff");
+
     include 'dbconn.php';
     $sql = "SELECT * FROM users";
     $result = mysqli_query($conn,$sql);
@@ -8,15 +11,14 @@
         isset($_POST['fName']) &&
         isset($_POST['lName']) &&
         isset($_POST['email']) &&
-        isset($_POST['password'])
+        isset($_POST['roleID'])
     ) {
 
         $userID = $_POST['userID'];
         $fName = htmlspecialchars($_POST['fName'], ENT_QUOTES, 'UTF-8');
         $lName = htmlspecialchars($_POST['lName'], ENT_QUOTES, 'UTF-8');
         $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-        $password = htmlspecialchars(trim($_POST['password']), ENT_QUOTES, 'UTF-8');
-        $hashedPassword = hash('sha256', $password);
+        $roleID = intval($_POST['roleID']);
     
         $sql = 
         "UPDATE users 
@@ -24,12 +26,12 @@
             fName = ?,
             lName = ?,
             email = ?,
-            password = ?
+            roleID = ?
 
         WHERE userID = ?";
 
         if ($stmt = mysqli_prepare($conn, $sql)) {
-            mysqli_stmt_bind_param($stmt, "ssssi", $fName, $lName, $email, $hashedPassword, $userID);
+            mysqli_stmt_bind_param($stmt, "ssssi", $fName, $lName, $email, $roleID, $userID);
             if (mysqli_stmt_execute($stmt)) {
                 header("Location: viewUsers.php?user=updated");
                 exit();

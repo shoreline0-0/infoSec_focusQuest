@@ -1,4 +1,12 @@
 <?php
+    header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
+    header("X-Content-Type-Options: nosniff");
+
+    session_start();
+    if (!isset($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+
     include 'dbconn.php';
 ?>
 
@@ -13,10 +21,8 @@
         <div class="signup">
             <h1>Sign Up</h1>
             <div class="box1">
-                <?php
-                        echo 
                             "<form method='post' action='createUser.php'>
-
+                                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                                 <input type = 'hidden' id='userID' name = 'userID' /><br><br>
 
                                 <label for='fName'>First Name:</label><br>
@@ -31,14 +37,11 @@
                                 <label for='password'>Password:</label><br>
                                 <input type = 'password' id='password' name = 'password'  /><br><br>
 
-                                <!-- <label for='confPass'>Confirm Password:</label><br>
-                                <input type='password' id='confPass' id='fName' name='confPass' required><br> to be added later-->
                     
                                 <br><br>
                     
                                 <button class='createUser' type='submit'> Sign up </a></button>
                             </form>";
-                ?>
             </div>  
         </div>
     </body>
