@@ -4,7 +4,7 @@
         <ul>
             <li><a href="index.php">Log out</a></li>
         </ul>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Home</title>
     </head>
     <body>

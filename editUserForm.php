@@ -1,7 +1,6 @@
 <?php
     include 'dbconn.php';
 
-    $userID = $_POST['userID'];
     $fName = $_POST['fName'];
     $lName = $_POST['lName'];
     $email = $_POST['email'];
@@ -20,7 +19,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Edit User</title>
     </head>
     <body>
@@ -46,6 +45,8 @@
                                 <input type = 'password', name = 'password'  value='". $_POST["password"] ."' /><br><br>
 
                                 <button type='submit' class='updateUser'>Update</button>
+                                <br>
+                                <button onclick='history.back()'>Go Back</button>
                             </form>";
                     
                 ?>
@@ -53,6 +54,4 @@
         </div>
     </body>
 </html>
-
-<!-- Agustin, Sherlene F.     INF227 -->
 

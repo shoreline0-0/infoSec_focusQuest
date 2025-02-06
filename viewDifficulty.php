@@ -11,7 +11,7 @@
             <li><a href="index.php">Log out</a></li>
             <li><a href="home.php">Home</a></li>
         </ul>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Manage - Difficulty</title>
     </head>
     <body>
@@ -19,6 +19,19 @@
             <h2>Manage Difficulty</h2>
             <table class="tableStyle">
                 <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>
+                            <form method='post' action='addDifficultyForm.php'>
+                                <button type='submit'>
+                                    Add Difficulty
+                                </button> 
+                            </form>
+                        </th>
+                    </tr>
                     <tr>
                         <th> Difficulty ID </th>
                         <th> Penalty </th>    
@@ -36,7 +49,7 @@
                                     echo "<td>" . $row["penalty"] . "</td>";
                                     echo "<td>" . $row["maxDistractions"] . "</td>";
                                     echo "<td>" . $row["goal"] . "</td>";
-                                    echo "<td> 
+                                    echo "<td>
                                             <form method='post' action='editDifficultyForm.php'>
                                                 <input type = 'hidden' name = 'difficultyID' value = '". $row['difficultyID']. "'/>
                                                 <input type = 'hidden' name = 'penalty' value = '". $row['penalty']. "'/>      
@@ -44,12 +57,20 @@
                                                 <input type = 'hidden' name = 'goal' value = '". $row['goal']. "'/>
                                                 <button type='submit'>Update</button>
                                             </form>
+                                            <br>
+                                            <form method='post' action='deleteDifficulty.php'>
+                                                <input type = 'hidden' name = 'difficultyID' value = '". $row['difficultyID']. "'/>
+                                                <input type = 'hidden' name = 'penalty' value = '". $row['penalty']. "'/>      
+                                                <input type = 'hidden' name = 'maxDistractions' value = '". $row['maxDistractions']. "'/>
+                                                <input type = 'hidden' name = 'goal' value = '". $row['goal']. "'/>
+                                                <button type='submit'>Delete</button>
+                                            </form>
                                         </td>";
                                 echo "<tr>";
 
                             }
                         } else {
-                            echo "No results found.";
+                            echo "<tr><td>No records.</td></tr>";
                         }
                         mysqli_close($conn);
                     ?>

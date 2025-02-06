@@ -11,24 +11,28 @@
     ) {
 
         $difficultyID = $_POST['difficultyID'];
-        $penalty = $_POST['penalty'];
-        $maxDistractions = $_POST['maxDistractions'];
-        $goal = $_POST['goal'];
+        $penalty = intval($_POST['penalty']);
+        $maxDistractions = intval($_POST['maxDistractions']);
+        $goal = intval($_POST['goal']);
 
         $sql = 
         "UPDATE difficulty 
         SET 
-            penalty = '$penalty',
-            maxDistractions = '$maxDistractions',
-            goal = '$goal'
+            penalty = ?,
+            maxDistractions = ?,
+            goal = ?
 
-        WHERE difficultyID = '$difficultyID'";
-
-        if (mysqli_query($conn, $sql)) {
-            echo "Updated successfully.
-            <a href='viewDifficulty.php'>Go back</a>";
+        WHERE difficultyID = ?";
+        if ($stmt = mysqli_prepare($conn, $sql)) {
+            mysqli_stmt_bind_param($stmt, "iiii", $penalty, $maxDistractions, $goal, $difficultyID);
+            if (mysqli_stmt_execute($stmt)) {
+                header("Location: viewDifficulty.php?difficulty=updated");
+                exit();
+            } else {
+                echo "Error: " . mysqli_stmt_execute($stmt);
+            }
         } else {
-            echo "Error: " . mysqli_error($conn);
+            echo "Error preparing statement: " . mysqli_error($conn);
         }
     } else {
         echo "Missing parameters.";

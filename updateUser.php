@@ -12,27 +12,34 @@
     ) {
 
         $userID = $_POST['userID'];
-        $fName = $_POST['fName'];
-        $lName = $_POST['lName'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-
+        $fName = htmlspecialchars($_POST['fName'], ENT_QUOTES, 'UTF-8');
+        $lName = htmlspecialchars($_POST['lName'], ENT_QUOTES, 'UTF-8');
+        $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        $password = htmlspecialchars(trim($_POST['password']), ENT_QUOTES, 'UTF-8');
+        $hashedPassword = hash('sha256', $password);
+    
         $sql = 
         "UPDATE users 
         SET 
-            fName = '$fName',
-            lName = '$lName',
-            email = '$email',
-            password = '$password'
+            fName = ?,
+            lName = ?,
+            email = ?,
+            password = ?
 
-        WHERE userID = '$userID'";
+        WHERE userID = ?";
 
-        if (mysqli_query($conn, $sql)) {
-            echo "Updated successfully.
-            <a href='viewUsers.php'>Go back</a>";
+        if ($stmt = mysqli_prepare($conn, $sql)) {
+            mysqli_stmt_bind_param($stmt, "ssssi", $fName, $lName, $email, $hashedPassword, $userID);
+            if (mysqli_stmt_execute($stmt)) {
+                header("Location: viewUsers.php?user=updated");
+                exit();
+            } else {
+                echo "Error: " . mysqli_stmt_execute($stmt);
+            }
         } else {
-            echo "Error: " . mysqli_error($conn);
+            echo "Error preparing statement: " . mysqli_error($conn);
         }
+        
     } else {
         echo "Missing parameters.";
     }

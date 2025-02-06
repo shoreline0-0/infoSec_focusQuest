@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Index</title>
     </head>
     <body>
         <div class="index">
-            <h2>Index</h2>
-
+            <h2>Welcome to Focus Quest</h2>
             <div class="box2">
                 <button type="button"> <a href="login.php">Log-in</a></button>
                 <br> <br>  

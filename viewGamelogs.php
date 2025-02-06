@@ -11,7 +11,7 @@
             <li><a href="index.php">Log out</a></li>
             <li><a href="home.php">Home</a></li>
         </ul>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Manage - Gamelogs</title>
     </head>
     <body>
@@ -40,22 +40,21 @@
                                     echo "<td>" . $row["score"] . "</td>";
                                     echo "<td>" . $row["timestamp"] . "</td>";
                                     echo "<td>" . $row["status"] . "</td>";
-                                // echo "<td> 
-                                //         <form method='post' action='editGamelogForm.php'>
-                                //             <input type = 'hidden', name = 'logID' value = '". $row['logID']. "'/>
-                                //             <input type = 'hidden', name = 'userID' value = '". $row['userID']. "'/>      
-                                //             <input type = 'hidden', name = 'difficultyID' value = '". $row['difficultyID']. "'/>
-                                //             <input type = 'hidden', name = 'score' value = '". $row['score']. "'/>
-                                //             <input type = 'hidden', name = 'timestamp' value = '". $row['timestamp']. "'/>
-                                //             <input type = 'hidden', name = 'status' value = '". $row['status']. "'/>
-
-                                //             <button type='submit'>Update</button>
-                                //         </form>
-                                //       </td>";
+                                echo "<td> 
+                                        <form method='post' action='deleteGamelog.php'>
+                                            <input type = 'hidden', name = 'logID' value = '". $row['logID']. "'/>
+                                            <input type = 'hidden', name = 'userID' value = '". $row['userID']. "'/>      
+                                            <input type = 'hidden', name = 'difficultyID' value = '". $row['difficultyID']. "'/>
+                                            <input type = 'hidden', name = 'score' value = '". $row['score']. "'/>
+                                            <input type = 'hidden', name = 'timestamp' value = '". $row['timestamp']. "'/>
+                                            <input type = 'hidden', name = 'status' value = '". $row['status']. "'/>
+                                            <button type='submit'>Delete</button>
+                                        </form>
+                                      </td>";
                                 echo "<tr>";
                             }
                         } else {
-                            echo "No results found.";
+                            echo "<tr><td>No records.</td></tr>";
                         }
                         mysqli_close($conn);
                     ?>

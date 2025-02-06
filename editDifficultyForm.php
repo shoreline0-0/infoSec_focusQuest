@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>Edit Difficulty</title>
     </head>
     <body>
@@ -42,6 +42,8 @@
                                 <input type = 'text', name = 'goal'  value='". $_POST["goal"] ."' /><br><br>
 
                                 <button type='submit' class='updateDifficulty'>Update</button>
+                                <br>
+                                <button onclick='history.back()'>Go Back</button>
                             </form>";
                     
                 ?>
@@ -50,5 +52,4 @@
     </body>
 </html>
 
-<!-- Agustin, Sherlene F.     INF227 -->
 

@@ -8,7 +8,7 @@
 <html>
     <head>
         <title>Manage - Users</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="navigation">
@@ -45,11 +45,20 @@
                                                         <input type = 'hidden' name = 'password' value = '". $row['password']. "'/>  
                                                         <button type='submit'>Update</button>
                                                     </form>
+                                                    <br>
+                                                    <form method='post' action='deleteUser.php'>
+                                                        <input type = 'hidden' name = 'userID' value = '". $row['userID']. "'/>
+                                                        <input type = 'hidden' name = 'fName' value = '". $row['fName']. "'/>      
+                                                        <input type = 'hidden' name = 'lName' value = '". $row['lName']. "'/>
+                                                        <input type = 'hidden' name = 'email' value = '". $row['email']. "'/>
+                                                        <input type = 'hidden' name = 'password' value = '". $row['password']. "'/>  
+                                                        <button type='submit'>Delete</button>
+                                                    </form>
                                                 </td>";
                                         echo "<tr>";
                                 }
                             } else {
-                                echo "No results found.";
+                                echo "<tr><td>No records.</td></tr>";
                             }
                             mysqli_close($conn);
                         ?>
