@@ -1,0 +1,3324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2025-02-07-ZAP-Report-3/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2025-02-07-ZAP-Report-3/themes/original/main.css" rel="stylesheet">
+<link
+	href="2025-02-07-ZAP-Report-3/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2025-02-07-ZAP-Report-3/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Fri 7 Feb 2025, at 19:16:01</span>
+		</p>
+		<p>ZAP Version: 2.16.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(3)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(27.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>6</span><br> <span class="additional-info-percentages">(54.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(45.5%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(27.3%)</span></td>
+							<td><span>11</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(11)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(18.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>20</span><br> <span
+								class="additional-info-percentages">(181.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>23</span><br> <span
+								class="additional-info-percentages">(209.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Authentication Request Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(36.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Information Disclosure - Sensitive Information in URL</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(9.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(81.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(81.8%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>72</span><br> <span
+								class="additional-info-percentages">(654.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">User Controllable HTML Element Attribute (Potential XSS)</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(54.5%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>11</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (229 bytes)</summary>
+				
+				<pre><code>GET http://localhost/robots.txt HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/server-status</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/538.html">CWE-538</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>apache_server_status</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (281 bytes)</summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/signup.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (179 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:04:04 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 5810
+Content-Type: text/html; charset=ISO-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5810 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Apache Status&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;
+
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12&lt;/dt&gt;
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;
+&lt;dt&gt;Apache Lounge VS17 Server built: Oct 18 2023 13:03:18
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;
+&lt;dt&gt;Current Time: Friday, 07-Feb-2025 19:04:04 China Standard Time&lt;/dt&gt;
+&lt;dt&gt;Restart Time: Friday, 07-Feb-2025 14:10:18 China Standard Time&lt;/dt&gt;
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;
+&lt;dt&gt;Server uptime:  4 hours 53 minutes 46 seconds&lt;/dt&gt;
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;
+&lt;dt&gt;Total accesses: 18953 - Total Traffic: 14.9 MB - Total Duration: 458046&lt;/dt&gt;
+&lt;dt&gt;1.08 requests/sec - 885 B/second - 823 B/request - 24.1675 ms/request&lt;/dt&gt;
+&lt;dt&gt;5 requests currently being processed, 0 workers gracefully restarting, 145 idle workers&lt;/dt&gt;
+&lt;/dl&gt;&lt;pre&gt;________________________________________________________________
+________________________________________________________________
+______________KW_WK__W&lt;/pre&gt;
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;&quot; Waiting for Connection, 
+&quot;&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;&quot; Starting up, 
+&quot;&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;&quot; Reading Request,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;&quot; Sending Reply, 
+&quot;&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;&quot; Keepalive (read), 
+&quot;&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;&quot; DNS Lookup,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;&quot; Closing connection, 
+&quot;&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;&quot; Logging, 
+&quot;&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;&quot; Gracefully finishing,&lt;br /&gt; 
+&quot;&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;&quot; Idle cleanup of worker, 
+&quot;&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;&quot; Open slot with no current process&lt;br /&gt;
+&lt;/p&gt;
+
+
+&lt;table border=&quot;0&quot;&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/311/311&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5056&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.20&lt;/td&gt;&lt;td&gt;0.20
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/logout.php/index.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;60/1082/1082&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;19282&lt;/td&gt;&lt;td&gt;39.9&lt;/td&gt;&lt;td&gt;0.90&lt;/td&gt;&lt;td&gt;0.90
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;8/2092/2092&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;32919&lt;/td&gt;&lt;td&gt;1.5&lt;/td&gt;&lt;td&gt;1.70&lt;/td&gt;&lt;td&gt;1.70
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2680/2680&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;47953&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.12&lt;/td&gt;&lt;td&gt;2.12
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;6/3442/3442&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;135020&lt;/td&gt;&lt;td&gt;3.5&lt;/td&gt;&lt;td&gt;2.79&lt;/td&gt;&lt;td&gt;2.79
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/index.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;1/1445/1445&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;23108&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.02&lt;/td&gt;&lt;td&gt;1.02
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/createUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2635/2635&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;88738&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.09&lt;/td&gt;&lt;td&gt;2.09
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2296/2296&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;36095&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.74&lt;/td&gt;&lt;td&gt;1.74
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/createUser.php/logout.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;7/2970/2970&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;69871&lt;/td&gt;&lt;td&gt;1.7&lt;/td&gt;&lt;td&gt;2.33&lt;/td&gt;&lt;td&gt;2.33
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+ &lt;hr /&gt; &lt;table&gt;
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+&lt;hr&gt;
+&lt;table cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#000000&quot;&gt;
+&lt;b&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Arial,Helvetica&quot;&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/style.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/style.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (254 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Last-Modified: Thu, 06 Feb 2025 14:00:11 GMT
+ETag: &quot;12cc-62d79a91b82dd&quot;
+Accept-Ranges: bytes
+Content-Length: 4812
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4812 bytes)</summary>
+				
+				<pre><code>:root{
+    --customWhite: #fdfdfd;
+    
+    --lightBrown: #f5e4c4;
+    --lightOrange: #f07b6c;
+
+    --lightGreen: #94e9f8;
+    --green: #58acd3;
+    --darkGreen: #006098;
+    --shadowGreen: #162a55;
+
+    --gradientBG: linear-gradient(to right, var(--lightGreen), var(--lightOrange));
+
+    --heading: &#39;Trebuchet MS&#39;, sans-serif;
+    --body: &#39;Helvetica&#39;, sans-serif;
+
+}
+
+
+.clearfix:after {
+    content: &quot;&quot;;
+    clear: both;
+    display: table;
+}
+
+
+body {
+    background-color: var(--customWhite);
+    align-content: center;
+    background-image: url(&#39;assets/bgImg.jpg&#39;);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: &#39;&#39;;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+/* ================heading================ */
+
+h1 {
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 40px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--heading);
+    color: var(--customWhite);
+
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ================button================ */
+button {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--customWhite);
+    
+    width: 80px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--lightOrange);
+
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    mix-blend-mode: multiply;
+}
+
+/* ================input================ */
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.error {
+    color: red;
+}
+
+/* ================box================ */
+
+.box1 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--lightBrown);
+
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+    color: black;
+}
+
+.box2 {
+
+    border-radius: 15px;
+    color: var(--customWhite);
+    
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 200px;
+    background-color: var(--lightBrown);
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+}
+
+/* ================container================ */
+
+.container {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .icons {
+    max-width: 100px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+/* ================navpane================ */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--gradientBG);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 14px 16px;
+
+    transition-duration: 0.2s;
+}
+
+li a:hover {
+    background-color:var(--shadowGreen);
+} 
+
+/* ================table================ */
+
+.tableStyle {
+    width: 90%;
+    border-collapse: collapse;
+    font-family: var(--body);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableStyle th, .tableStyle td {
+    padding: 12px 15px;
+}
+
+.tableStyle thead tr {
+    background-color: var(--darkGreen);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tableStyle tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: 25px;
+
+}
+
+.tableStyle tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tableStyle tbody tr:nth-of-type(odd) {
+    background-color: #eaf2f8;
+}
+
+.tableStyle tbody tr:last-of-type {
+    border-bottom: 2px solid var(--darkGreen)
+}
+
+.tableStyle tbody tr:hover {
+    background-color: #d1e7dd;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: #4CAF50;
+    color: var(--customWhite);
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/index.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/index.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (440 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Content-Length: 497
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (497 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Index&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;index&quot;&gt;
+            &lt;h2&gt;Welcome to Focus Quest&lt;/h2&gt;
+            &lt;div class=&quot;box2&quot;&gt;
+                &lt;button type=&quot;button&quot;&gt; &lt;a href=&quot;login.php&quot;&gt;Log-in&lt;/a&gt;&lt;/button&gt;
+                &lt;br&gt; &lt;br&gt;  
+                &lt;button type=&quot;button&quot;&gt; &lt;a href=&quot;signup.php&quot;&gt;Sign Up&lt;/a&gt;&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/style.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/style.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (254 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Last-Modified: Thu, 06 Feb 2025 14:00:11 GMT
+ETag: &quot;12cc-62d79a91b82dd&quot;
+Accept-Ranges: bytes
+Content-Length: 4812
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4812 bytes)</summary>
+				
+				<pre><code>:root{
+    --customWhite: #fdfdfd;
+    
+    --lightBrown: #f5e4c4;
+    --lightOrange: #f07b6c;
+
+    --lightGreen: #94e9f8;
+    --green: #58acd3;
+    --darkGreen: #006098;
+    --shadowGreen: #162a55;
+
+    --gradientBG: linear-gradient(to right, var(--lightGreen), var(--lightOrange));
+
+    --heading: &#39;Trebuchet MS&#39;, sans-serif;
+    --body: &#39;Helvetica&#39;, sans-serif;
+
+}
+
+
+.clearfix:after {
+    content: &quot;&quot;;
+    clear: both;
+    display: table;
+}
+
+
+body {
+    background-color: var(--customWhite);
+    align-content: center;
+    background-image: url(&#39;assets/bgImg.jpg&#39;);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: &#39;&#39;;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+/* ================heading================ */
+
+h1 {
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 40px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--heading);
+    color: var(--customWhite);
+
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ================button================ */
+button {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--customWhite);
+    
+    width: 80px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--lightOrange);
+
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    mix-blend-mode: multiply;
+}
+
+/* ================input================ */
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.error {
+    color: red;
+}
+
+/* ================box================ */
+
+.box1 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--lightBrown);
+
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+    color: black;
+}
+
+.box2 {
+
+    border-radius: 15px;
+    color: var(--customWhite);
+    
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 200px;
+    background-color: var(--lightBrown);
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+}
+
+/* ================container================ */
+
+.container {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .icons {
+    max-width: 100px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+/* ================navpane================ */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--gradientBG);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 14px 16px;
+
+    transition-duration: 0.2s;
+}
+
+li a:hover {
+    background-color:var(--shadowGreen);
+} 
+
+/* ================table================ */
+
+.tableStyle {
+    width: 90%;
+    border-collapse: collapse;
+    font-family: var(--body);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableStyle th, .tableStyle td {
+    padding: 12px 15px;
+}
+
+.tableStyle thead tr {
+    background-color: var(--darkGreen);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tableStyle tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: 25px;
+
+}
+
+.tableStyle tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tableStyle tbody tr:nth-of-type(odd) {
+    background-color: #eaf2f8;
+}
+
+.tableStyle tbody tr:last-of-type {
+    border-bottom: 2px solid var(--darkGreen)
+}
+
+.tableStyle tbody tr:hover {
+    background-color: #d1e7dd;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: #4CAF50;
+    color: var(--customWhite);
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Information Disclosure - Sensitive Information in URL</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/viewUsers.php?user=updated</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The URL contains potentially sensitive information. The following string was found via the pattern: user</p>
+
+<p>user</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (461 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/viewUsers.php?user=updated HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: http://localhost/focusQuest/editUserForm.php
+Connection: keep-alive
+Cookie: PHPSESSID=g79oa017283pn8ras6stlod120
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (607 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:13:34 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+content-length: 33986
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (33986 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;300;url=index.php&quot;&gt;
+        &lt;title&gt;Manage - Users&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;navigation&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;logout.php&quot;&gt;Log out&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;home.php&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;users&quot;&gt;
+            &lt;h2&gt;Manage Users&lt;/h2&gt;
+            &lt;table class=&quot;tableStyle&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt; UserID &lt;/th&gt;
+                            &lt;th&gt; Name &lt;/th&gt;    
+                            &lt;th&gt; Email &lt;/th&gt;
+                            &lt;th&gt; Role &lt;/th&gt;
+                            &lt;th&gt; Actions &lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;/tbody&gt;
+                        &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Walter Mart&lt;/td&gt;&lt;td&gt;walterm@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;4&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Walter&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Mart&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;walterm@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;password3&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;4&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Walter&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Mart&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;walterm@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;password3&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Vlad imir Dracoola&lt;/td&gt;&lt;td&gt;vlad@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;5&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Vlad imir&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Dracoola&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;vlad@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;password4&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;5&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Vlad imir&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Dracoola&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;vlad@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;password4&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;Mlem Mlom&lt;/td&gt;&lt;td&gt;mlom@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;20&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Mlem&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Mlom&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;mlom@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;mlemmlom&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;20&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Mlem&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Mlom&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;mlom@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;mlemmlom&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;22&lt;/td&gt;&lt;td&gt;Min erva Santos&lt;/td&gt;&lt;td&gt;msantos@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;22&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Min erva&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Santos&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;msantos@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;asdfghjkl&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;22&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Min erva&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Santos&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;msantos@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;asdfghjkl&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;23&lt;/td&gt;&lt;td&gt;Klint van Zieks&lt;/td&gt;&lt;td&gt;ilikebeer@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;23&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Klint&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;van Zieks&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;ilikebeer@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;111ayeee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;23&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Klint&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;van Zieks&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;ilikebeer@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;111ayeee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;24&lt;/td&gt;&lt;td&gt;Barok van Zieks&lt;/td&gt;&lt;td&gt;barokvz@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;24&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Barok&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;van Zieks&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;barokvz@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;84r0kv@n&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;24&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Barok&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;van Zieks&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;barokvz@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;84r0kv@n&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;25&lt;/td&gt;&lt;td&gt;Iris Watson&lt;/td&gt;&lt;td&gt;irisw@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;25&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Iris&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Watson&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;irisw@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;shhiwrite&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;25&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Iris&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Watson&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;irisw@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;shhiwrite&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;26&lt;/td&gt;&lt;td&gt;Its Jork&lt;/td&gt;&lt;td&gt;pekorajork@email.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;26&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Its&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Jork&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;pekorajork@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;$2y$10$LT.jpOBCZcF.R&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;26&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Its&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Jork&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;pekorajork@email.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;$2y$10$LT.jpOBCZcF.R&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;27&lt;/td&gt;&lt;td&gt;eevee eevee&lt;/td&gt;&lt;td&gt;eevee&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;27&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;eevee&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;eevee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;eevee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;$2y$10$Elu/15Ofy8stZ&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;27&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;eevee&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;eevee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;eevee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;$2y$10$Elu/15Ofy8stZ&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;snorlax snorlax&lt;/td&gt;&lt;td&gt;bibi@gmail.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;28&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;snorlax&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;snorlax&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;bibi@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;688787d8ff144c502c7f&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;28&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;snorlax&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;snorlax&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;bibi@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;688787d8ff144c502c7f&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;29&lt;/td&gt;&lt;td&gt;qqq www&lt;/td&gt;&lt;td&gt;eee&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;29&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;qqq&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;www&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;eee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;12b0f0dcaefb10c02a83aa9adb025978ddb5512dc04eb39df6811c6a6bf9770c&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;29&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;qqq&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;www&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;eee&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;12b0f0dcaefb10c02a83aa9adb025978ddb5512dc04eb39df6811c6a6bf9770c&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;31&lt;/td&gt;&lt;td&gt;fgh qwe&lt;/td&gt;&lt;td&gt;abc@gmail.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;31&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;fgh&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;qwe&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;abc@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;d36ba4d423748ebcaf05a6fe6b086bf0c4176ec943e6abc73c3b71950cefc296&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;31&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;fgh&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;qwe&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;abc@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;d36ba4d423748ebcaf05a6fe6b086bf0c4176ec943e6abc73c3b71950cefc296&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Coleen Martha&lt;/td&gt;&lt;td&gt;coleenmartha@gmail.com&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;32&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Coleen&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Martha&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;coleenmartha@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;f2fdd58856e77152463d6183ffa198d69bb241ddf8378734c4d074f74544f4c8&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;2&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;32&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Coleen&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Martha&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;coleenmartha@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;f2fdd58856e77152463d6183ffa198d69bb241ddf8378734c4d074f74544f4c8&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;2&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;42&lt;/td&gt;&lt;td&gt;Kendra Kramer&lt;/td&gt;&lt;td&gt;kkramer@gmail.com&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;42&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Kendra&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Kramer&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;kkramer@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;6fb084f6007e20732f8a9ef1bff8f40437ac94c3d6b5e9d0ab4af0ee83a1d4ba&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;2&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;42&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Kendra&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Kramer&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;kkramer@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;6fb084f6007e20732f8a9ef1bff8f40437ac94c3d6b5e9d0ab4af0ee83a1d4ba&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;2&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;&lt;tr&gt;&lt;td&gt;45&lt;/td&gt;&lt;td&gt;Dahlia Hawthorne&lt;/td&gt;&lt;td&gt;dollie@gmail.com&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt; 
+                                                    &lt;form method=&#39;post&#39; action=&#39;editUserForm.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;45&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Dahlia&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Hawthorne&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;dollie@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;494f0b290d7b1390a777208609ac5c8d82333aef38a6776cc9c13ab16dcf47b9&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt;
+                                                          
+                                                        &lt;button type=&#39;submit&#39;&gt;Update&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                    &lt;br&gt;
+                                                    &lt;form method=&#39;post&#39; action=&#39;deleteUser.php&#39;&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;userID&#39; value = &#39;45&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;fName&#39; value = &#39;Dahlia&#39;/&gt;      
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;lName&#39; value = &#39;Hawthorne&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;email&#39; value = &#39;dollie@gmail.com&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;password&#39; value = &#39;494f0b290d7b1390a777208609ac5c8d82333aef38a6776cc9c13ab16dcf47b9&#39;/&gt;
+                                                        &lt;input type = &#39;hidden&#39; name = &#39;roleID&#39; value = &#39;1&#39;/&gt; 
+                                                        &lt;button type=&#39;submit&#39;&gt;Delete&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                &lt;/td&gt;&lt;tr&gt;                    &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;  
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>user</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>user</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Do not pass sensitive information in URIs.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:PHPSESSID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (644 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=nopbqli0vh4brsduns3gv2mvrv; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1647
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1647 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Log In&lt;/title&gt;
+    &lt;/head&gt; 
+    &lt;body&gt;
+        &lt;div class=&quot;login&quot;&gt;
+            &lt;h1&gt;Log-in&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class=&quot;box1&quot;&gt;
+                        &lt;form method=&quot;post&quot; action=&quot;verifyLogin.php&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;fe012a5a58b8940ef27c33558d937db79779e41b8182cff3b80122dc15090406&quot;&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;email&#39;&gt;Email:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = &#39;text&#39; id=&#39;email&#39; name = &#39;email&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                                
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;password&#39;&gt;Password:&lt;/label&gt;
+                            &lt;input type = &#39;password&#39; id=&#39;password&#39; name = &#39;password&#39; /&gt;
+                                                    
+                            &lt;br&gt;&lt;br&gt;
+                        
+                            &lt;button class=&quot;verifyLogin&quot; type=&quot;submit&quot;&gt; Login &lt;/button&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;
+
+                            &lt;button type=&quot;button&quot;&gt;
+                                &lt;a href=&quot;index.php&quot;&gt;
+                                    Back
+                                &lt;/a&gt;
+                            &lt;/button&gt;
+                            &lt;p&gt;No account yet? &lt;br&gt;
+                            &lt;a href=&quot;signup.php&quot;&gt;Sign up here!&lt;/a&gt;&lt;/p&gt;
+                        &lt;/form&gt;                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>nopbqli0vh4brsduns3gv2mvrv</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (226 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (644 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:04:04 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=7qo930mkpknavicrqcqc1je7u6; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1647
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1647 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Log In&lt;/title&gt;
+    &lt;/head&gt; 
+    &lt;body&gt;
+        &lt;div class=&quot;login&quot;&gt;
+            &lt;h1&gt;Log-in&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class=&quot;box1&quot;&gt;
+                        &lt;form method=&quot;post&quot; action=&quot;verifyLogin.php&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;7e708c026b9b0a4da24ce80aca809bdf7837d13e0203675634e87c95d126b51d&quot;&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;email&#39;&gt;Email:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = &#39;text&#39; id=&#39;email&#39; name = &#39;email&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                                
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;password&#39;&gt;Password:&lt;/label&gt;
+                            &lt;input type = &#39;password&#39; id=&#39;password&#39; name = &#39;password&#39; /&gt;
+                                                    
+                            &lt;br&gt;&lt;br&gt;
+                        
+                            &lt;button class=&quot;verifyLogin&quot; type=&quot;submit&quot;&gt; Login &lt;/button&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;
+
+                            &lt;button type=&quot;button&quot;&gt;
+                                &lt;a href=&quot;index.php&quot;&gt;
+                                    Back
+                                &lt;/a&gt;
+                            &lt;/button&gt;
+                            &lt;p&gt;No account yet? &lt;br&gt;
+                            &lt;a href=&quot;signup.php&quot;&gt;Sign up here!&lt;/a&gt;&lt;/p&gt;
+                        &lt;/form&gt;                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Authentication Request Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/focusQuest/createUser.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost/focusQuest/signup.php</p>
+
+<p>csrfToken=csrf_token</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (364 bytes)</summary>
+				
+				<pre><code>POST http://localhost/focusQuest/createUser.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/focusQuest/signup.php
+content-length: 144
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (144 bytes)</summary>
+				
+				<pre><code>csrf_token=b4c525f64afbdcedd534609de7a57f91eed6767eddcd1f9b9cfb513d9594915f&amp;userID=&amp;fName=ZAP&amp;lName=ZAP&amp;email=zaproxy%40example.com&amp;password=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (666 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=h3jrbq6g4js4fd1fmlri5rvuth; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: logout.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/565.html">CWE-565</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was:</p>
+
+<p>localhost</p>
+
+<p>PHPSESSID=nopbqli0vh4brsduns3gv2mvrv</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (644 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:02:55 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=nopbqli0vh4brsduns3gv2mvrv; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1647
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1647 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Log In&lt;/title&gt;
+    &lt;/head&gt; 
+    &lt;body&gt;
+        &lt;div class=&quot;login&quot;&gt;
+            &lt;h1&gt;Log-in&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class=&quot;box1&quot;&gt;
+                        &lt;form method=&quot;post&quot; action=&quot;verifyLogin.php&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;fe012a5a58b8940ef27c33558d937db79779e41b8182cff3b80122dc15090406&quot;&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;email&#39;&gt;Email:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = &#39;text&#39; id=&#39;email&#39; name = &#39;email&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                                
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;password&#39;&gt;Password:&lt;/label&gt;
+                            &lt;input type = &#39;password&#39; id=&#39;password&#39; name = &#39;password&#39; /&gt;
+                                                    
+                            &lt;br&gt;&lt;br&gt;
+                        
+                            &lt;button class=&quot;verifyLogin&quot; type=&quot;submit&quot;&gt; Login &lt;/button&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;
+
+                            &lt;button type=&quot;button&quot;&gt;
+                                &lt;a href=&quot;index.php&quot;&gt;
+                                    Back
+                                &lt;/a&gt;
+                            &lt;/button&gt;
+                            &lt;p&gt;No account yet? &lt;br&gt;
+                            &lt;a href=&quot;signup.php&quot;&gt;Sign up here!&lt;/a&gt;&lt;/p&gt;
+                        &lt;/form&gt;                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">User Controllable HTML Element Attribute (Potential XSS)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/focusQuest/editDifficultyForm.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">OWASP_2017_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/20.html">CWE-20</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/">OWASP_2021_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p>
+
+<p>http://localhost/focusQuest/editDifficultyForm.php</p>
+
+<p>appears to include user input in:</p>
+
+<p>a(n) [input] tag [value] attribute</p>
+
+<p>The user input found was:</p>
+
+<p>difficultyID=19</p>
+
+<p>The user-controlled value was:</p>
+
+<p>19</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (555 bytes)</summary>
+				
+				<pre><code>POST http://localhost/focusQuest/editDifficultyForm.php HTTP/1.1
+host: localhost
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 50
+Origin: http://localhost
+Connection: keep-alive
+Referer: http://localhost/focusQuest/viewDifficulty.php
+Cookie: PHPSESSID=g79oa017283pn8ras6stlod120
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (50 bytes)</summary>
+				
+				<pre><code>difficultyID=19&amp;penalty=1&amp;maxDistractions=2&amp;goal=3</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (607 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:13:08 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1611
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1611 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;300;url=index.php&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Edit Difficulty&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;login&quot;&gt;
+            &lt;h1&gt;Edit Difficulty&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class = box1&gt;
+                &lt;form method=&quot;post&quot; action=&quot;updateDifficulty.php&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;cfc7981f8c0ad0f745a8aa52558fa35eb28836e26f39ac3450fc5b613f0cb0dd&quot;&gt;
+                    &lt;input type=&quot;hidden&quot; name=&quot;difficultyID&quot; value=&quot;19&quot; readonly/&gt;
+
+                    &lt;label for=&quot;penalty&quot;&gt;Penalty:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;penalty&quot; value=&quot;1&quot; /&gt;&lt;br&gt;
+                                        &lt;br&gt;
+
+                    &lt;label for=&quot;maxDistractions&quot;&gt;Distractions:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;maxDistractions&quot; value=&quot;2&quot; /&gt;&lt;br&gt;
+                                        &lt;br&gt;
+
+                    &lt;label for=&quot;goal&quot;&gt;Goal:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;goal&quot; value=&quot;3&quot; /&gt;&lt;br&gt;
+                                        &lt;br&gt;
+
+                    &lt;button type=&#39;submit&#39; class=&#39;updateDifficulty&#39;&gt;Update&lt;/button&gt;
+                    &lt;br&gt;
+                    &lt;button type=&#39;button&#39;&gt;
+                        &lt;a href=&#39;viewDifficulty.php&#39;&gt;
+                            Back
+                        &lt;/a&gt;
+                    &lt;/button&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>difficultyID</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/mod_status.html">https://httpd.apache.org/docs/current/mod/mod_status.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a></li>
+										<li><a
+											href="https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Information Disclosure - Sensitive Information in URL</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10024/">Information Disclosure - Sensitive Information in URL</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>User Controllable HTML Element Attribute (Potential XSS)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10031/">User Controllable HTML Element Attribute (Potential XSS)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/20.html">20</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>20</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

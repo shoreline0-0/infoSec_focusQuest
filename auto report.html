@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP by Checkmarx Scanning Report</title>
+<link
+	href="2025-02-07-ZAP-Report-2/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2025-02-07-ZAP-Report-2/themes/original/main.css" rel="stylesheet">
+<link
+	href="2025-02-07-ZAP-Report-2/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP by Checkmarx Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2025-02-07-ZAP-Report-2/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Fri 7 Feb 2025, at 19:24:44</span>
+		</p>
+		<p>ZAP Version: 2.16.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(2)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(22.2%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(11.1%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(33.3%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(44.4%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(33.3%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(44.4%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(9)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Hidden File Found</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(66.7%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(100.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(11.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Authentication Request Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(22.2%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(55.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(55.6%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>72</span><br> <span
+								class="additional-info-percentages">(800.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>9</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (229 bytes)</summary>
+				
+				<pre><code>GET http://localhost/robots.txt HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Hidden File Found</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/server-status</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_FULL = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/538.html">CWE-538</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces">WSTG-v42-CONF-05</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A sensitive file was identified as accessible or available. This may leak administrative, configuration, or credential information which can be leveraged by a malicious individual to further attack the system or conduct social engineering efforts.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>apache_server_status</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (281 bytes)</summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/signup.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (180 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:24:33 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Type: text/html; charset=ISO-8859-1
+content-length: 17715
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (17715 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;Apache Status&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;
+
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12&lt;/dt&gt;
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;
+&lt;dt&gt;Apache Lounge VS17 Server built: Oct 18 2023 13:03:18
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;
+&lt;dt&gt;Current Time: Friday, 07-Feb-2025 19:24:33 China Standard Time&lt;/dt&gt;
+&lt;dt&gt;Restart Time: Friday, 07-Feb-2025 14:10:18 China Standard Time&lt;/dt&gt;
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;
+&lt;dt&gt;Server uptime:  5 hours 14 minutes 15 seconds&lt;/dt&gt;
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;
+&lt;dt&gt;Total accesses: 30149 - Total Traffic: 46.8 MB - Total Duration: 20084149&lt;/dt&gt;
+&lt;dt&gt;1.6 requests/sec - 2602 B/second - 1627 B/request - 666.163 ms/request&lt;/dt&gt;
+&lt;dt&gt;5 requests currently being processed, 0 workers gracefully restarting, 145 idle workers&lt;/dt&gt;
+&lt;/dl&gt;&lt;pre&gt;________________________________________________________________
+__________________________________WW____K____W____K_____________
+______________________&lt;/pre&gt;
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;&quot; Waiting for Connection, 
+&quot;&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;&quot; Starting up, 
+&quot;&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;&quot; Reading Request,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;&quot; Sending Reply, 
+&quot;&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;&quot; Keepalive (read), 
+&quot;&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;&quot; DNS Lookup,&lt;br /&gt;
+&quot;&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;&quot; Closing connection, 
+&quot;&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;&quot; Logging, 
+&quot;&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;&quot; Gracefully finishing,&lt;br /&gt; 
+&quot;&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;&quot; Idle cleanup of worker, 
+&quot;&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;&quot; Open slot with no current process&lt;br /&gt;
+&lt;/p&gt;
+
+
+&lt;table border=&quot;0&quot;&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;11/759/759&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;18434&lt;/td&gt;&lt;td&gt;3.4&lt;/td&gt;&lt;td&gt;6.08&lt;/td&gt;&lt;td&gt;6.08
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;17/585/585&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;14030&lt;/td&gt;&lt;td&gt;3.0&lt;/td&gt;&lt;td&gt;0.57&lt;/td&gt;&lt;td&gt;0.57
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/logout.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/738/738&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;18140&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4.26&lt;/td&gt;&lt;td&gt;4.26
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/createUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/202/202&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;131&lt;/td&gt;&lt;td&gt;27&lt;/td&gt;&lt;td&gt;7584&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.12&lt;/td&gt;&lt;td&gt;0.12
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/verifyLogin.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/202/202&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;132&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;2781&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.17&lt;/td&gt;&lt;td&gt;0.17
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/createUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/303/303&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;131&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;4701&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.23&lt;/td&gt;&lt;td&gt;0.23
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/login.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;2/516/516&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;12111&lt;/td&gt;&lt;td&gt;0.6&lt;/td&gt;&lt;td&gt;0.38&lt;/td&gt;&lt;td&gt;0.38
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /trace.axd HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/306/306&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;133&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;4826&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.27&lt;/td&gt;&lt;td&gt;0.27
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/signup.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/203/203&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;267615&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.09&lt;/td&gt;&lt;td&gt;0.09
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/logout.php/index.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/477/477&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;261970&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.30&lt;/td&gt;&lt;td&gt;0.30
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/createUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;131787&lt;/td&gt;&lt;td&gt;263574&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;12/636/636&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;257432&lt;/td&gt;&lt;td&gt;6.9&lt;/td&gt;&lt;td&gt;0.51&lt;/td&gt;&lt;td&gt;0.51
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/verifyLogin.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/3/3&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;131793&lt;/td&gt;&lt;td&gt;263560&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/viewDifficulty.php?difficulty=c%3A%2FWindows%2F&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;131753&lt;/td&gt;&lt;td&gt;263506&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editDifficultyForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/8/8&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;131736&lt;/td&gt;&lt;td&gt;263592&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/3/3&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;131739&lt;/td&gt;&lt;td&gt;263487&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;3/210/210&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;267859&lt;/td&gt;&lt;td&gt;0.9&lt;/td&gt;&lt;td&gt;0.18&lt;/td&gt;&lt;td&gt;0.18
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /.idea/WebServers.xml HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;144372&lt;/td&gt;&lt;td&gt;288744&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;144378&lt;/td&gt;&lt;td&gt;288756&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;144366&lt;/td&gt;&lt;td&gt;288731&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;164373&lt;/td&gt;&lt;td&gt;328746&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;164378&lt;/td&gt;&lt;td&gt;328756&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;164373&lt;/td&gt;&lt;td&gt;328746&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;184387&lt;/td&gt;&lt;td&gt;368775&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;184390&lt;/td&gt;&lt;td&gt;368780&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/deleteDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;184373&lt;/td&gt;&lt;td&gt;368745&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;184322&lt;/td&gt;&lt;td&gt;368644&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editDifficultyForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;184251&lt;/td&gt;&lt;td&gt;368503&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;204193&lt;/td&gt;&lt;td&gt;408386&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;243044&lt;/td&gt;&lt;td&gt;486087&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/viewUsers.php?user=c%3A%2FWindows%2Fsystem.ini &lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;78&lt;/td&gt;&lt;td&gt;242465&lt;/td&gt;&lt;td&gt;484931&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/3/3&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;78&lt;/td&gt;&lt;td&gt;242816&lt;/td&gt;&lt;td&gt;485636&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/viewDifficulty.php?difficulty=c%3A%2FWindows%2F&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1/1&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;78&lt;/td&gt;&lt;td&gt;242178&lt;/td&gt;&lt;td&gt;484356&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.00&lt;/td&gt;&lt;td&gt;0.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/203/203&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;204111&lt;/td&gt;&lt;td&gt;412008&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.13&lt;/td&gt;&lt;td&gt;0.13
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/4/4&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;&lt;td&gt;241538&lt;/td&gt;&lt;td&gt;487095&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editDifficultyForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/8/8&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;&lt;td&gt;241914&lt;/td&gt;&lt;td&gt;488200&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.01&lt;/td&gt;&lt;td&gt;0.01
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/deleteDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/5/5&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;&lt;td&gt;297102&lt;/td&gt;&lt;td&gt;594737&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.84&lt;/td&gt;&lt;td&gt;1.84
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/viewDifficulty.php?difficulty=deleted%27+%2F+sl&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/214/214&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;223216&lt;/td&gt;&lt;td&gt;638695&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.35&lt;/td&gt;&lt;td&gt;0.35
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/283/283&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;203883&lt;/td&gt;&lt;td&gt;421998&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.02&lt;/td&gt;&lt;td&gt;2.02
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/deleteDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/593/593&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;223400&lt;/td&gt;&lt;td&gt;651897&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;1.66&lt;/td&gt;&lt;td&gt;1.66
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/124/124&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;223571&lt;/td&gt;&lt;td&gt;635596&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.30&lt;/td&gt;&lt;td&gt;0.30
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/280/280&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;td&gt;296739&lt;/td&gt;&lt;td&gt;605429&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.25&lt;/td&gt;&lt;td&gt;0.25
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/313/313&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;81&lt;/td&gt;&lt;td&gt;295725&lt;/td&gt;&lt;td&gt;610446&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.60&lt;/td&gt;&lt;td&gt;0.60
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editDifficultyForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/656/656&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;223685&lt;/td&gt;&lt;td&gt;664415&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.89&lt;/td&gt;&lt;td&gt;0.89
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/deleteDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/1605/1605&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;td&gt;296069&lt;/td&gt;&lt;td&gt;638160&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.45&lt;/td&gt;&lt;td&gt;3.45
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/deleteDifficulty.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2641/2641&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;76&lt;/td&gt;&lt;td&gt;204029&lt;/td&gt;&lt;td&gt;660806&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.75&lt;/td&gt;&lt;td&gt;2.75
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2977/2977&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;223799&lt;/td&gt;&lt;td&gt;707342&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.00&lt;/td&gt;&lt;td&gt;3.00
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editDifficultyForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/3763/3763&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;80&lt;/td&gt;&lt;td&gt;296245&lt;/td&gt;&lt;td&gt;756522&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.44&lt;/td&gt;&lt;td&gt;3.44
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/updateUser.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2074/2074&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;77&lt;/td&gt;&lt;td&gt;203950&lt;/td&gt;&lt;td&gt;645687&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.60&lt;/td&gt;&lt;td&gt;2.60
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editDifficultyForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2965/2965&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;79&lt;/td&gt;&lt;td&gt;297187&lt;/td&gt;&lt;td&gt;716899&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;4.64&lt;/td&gt;&lt;td&gt;4.64
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /focusQuest/viewUsers.php?user=updated%27+%2F+sleep%2815%29&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/2779/2779&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;81&lt;/td&gt;&lt;td&gt;295619&lt;/td&gt;&lt;td&gt;658222&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;2.51&lt;/td&gt;&lt;td&gt;2.51
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;11776&lt;/td&gt;&lt;td&gt;0/3502/3502&lt;/td&gt;&lt;td&gt;_
+&lt;/td&gt;&lt;td&gt;78&lt;/td&gt;&lt;td&gt;242301&lt;/td&gt;&lt;td&gt;589628&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;3.21&lt;/td&gt;&lt;td&gt;3.21
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;POST /focusQuest/editUserForm.php HTTP/1.1&lt;/td&gt;&lt;/tr&gt;
+
+&lt;/table&gt;
+ &lt;hr /&gt; &lt;table&gt;
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;
+ &lt;/table&gt;
+&lt;hr&gt;
+&lt;table cellspacing=0 cellpadding=0&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#000000&quot;&gt;
+&lt;b&gt;&lt;font color=&quot;#ffffff&quot; face=&quot;Arial,Helvetica&quot;&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Consider whether or not the component is actually required in production, if it isn&#39;t then disable it. If it is then ensure access to it requires appropriate authentication and authorization, or limit exposure to internal systems or specific source IPs, etc.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/style.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/style.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (254 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Last-Modified: Thu, 06 Feb 2025 14:00:11 GMT
+ETag: &quot;12cc-62d79a91b82dd&quot;
+Accept-Ranges: bytes
+Content-Length: 4812
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4812 bytes)</summary>
+				
+				<pre><code>:root{
+    --customWhite: #fdfdfd;
+    
+    --lightBrown: #f5e4c4;
+    --lightOrange: #f07b6c;
+
+    --lightGreen: #94e9f8;
+    --green: #58acd3;
+    --darkGreen: #006098;
+    --shadowGreen: #162a55;
+
+    --gradientBG: linear-gradient(to right, var(--lightGreen), var(--lightOrange));
+
+    --heading: &#39;Trebuchet MS&#39;, sans-serif;
+    --body: &#39;Helvetica&#39;, sans-serif;
+
+}
+
+
+.clearfix:after {
+    content: &quot;&quot;;
+    clear: both;
+    display: table;
+}
+
+
+body {
+    background-color: var(--customWhite);
+    align-content: center;
+    background-image: url(&#39;assets/bgImg.jpg&#39;);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: &#39;&#39;;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+/* ================heading================ */
+
+h1 {
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 40px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--heading);
+    color: var(--customWhite);
+
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ================button================ */
+button {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--customWhite);
+    
+    width: 80px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--lightOrange);
+
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    mix-blend-mode: multiply;
+}
+
+/* ================input================ */
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.error {
+    color: red;
+}
+
+/* ================box================ */
+
+.box1 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--lightBrown);
+
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+    color: black;
+}
+
+.box2 {
+
+    border-radius: 15px;
+    color: var(--customWhite);
+    
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 200px;
+    background-color: var(--lightBrown);
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+}
+
+/* ================container================ */
+
+.container {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .icons {
+    max-width: 100px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+/* ================navpane================ */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--gradientBG);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 14px 16px;
+
+    transition-duration: 0.2s;
+}
+
+li a:hover {
+    background-color:var(--shadowGreen);
+} 
+
+/* ================table================ */
+
+.tableStyle {
+    width: 90%;
+    border-collapse: collapse;
+    font-family: var(--body);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableStyle th, .tableStyle td {
+    padding: 12px 15px;
+}
+
+.tableStyle thead tr {
+    background-color: var(--darkGreen);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tableStyle tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: 25px;
+
+}
+
+.tableStyle tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tableStyle tbody tr:nth-of-type(odd) {
+    background-color: #eaf2f8;
+}
+
+.tableStyle tbody tr:last-of-type {
+    border-bottom: 2px solid var(--darkGreen)
+}
+
+.tableStyle tbody tr:hover {
+    background-color: #d1e7dd;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: #4CAF50;
+    color: var(--customWhite);
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/focusQuest/createUser.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/200.html">CWE-200</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (364 bytes)</summary>
+				
+				<pre><code>POST http://localhost/focusQuest/createUser.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/focusQuest/signup.php
+content-length: 144
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (144 bytes)</summary>
+				
+				<pre><code>csrf_token=7fc2ec38719d01f0928a65f3a4bec0b594ec6e70702681f61858cfba96047a44&amp;userID=&amp;fName=ZAP&amp;lName=ZAP&amp;email=zaproxy%40example.com&amp;password=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (666 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=29vi778l45uma2df3894rkbcni; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: logout.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/style.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/style.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (254 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Last-Modified: Thu, 06 Feb 2025 14:00:11 GMT
+ETag: &quot;12cc-62d79a91b82dd&quot;
+Accept-Ranges: bytes
+Content-Length: 4812
+Content-Type: text/css
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4812 bytes)</summary>
+				
+				<pre><code>:root{
+    --customWhite: #fdfdfd;
+    
+    --lightBrown: #f5e4c4;
+    --lightOrange: #f07b6c;
+
+    --lightGreen: #94e9f8;
+    --green: #58acd3;
+    --darkGreen: #006098;
+    --shadowGreen: #162a55;
+
+    --gradientBG: linear-gradient(to right, var(--lightGreen), var(--lightOrange));
+
+    --heading: &#39;Trebuchet MS&#39;, sans-serif;
+    --body: &#39;Helvetica&#39;, sans-serif;
+
+}
+
+
+.clearfix:after {
+    content: &quot;&quot;;
+    clear: both;
+    display: table;
+}
+
+
+body {
+    background-color: var(--customWhite);
+    align-content: center;
+    background-image: url(&#39;assets/bgImg.jpg&#39;);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: &#39;&#39;;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+/* ================heading================ */
+
+h1 {
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 40px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--heading);
+    color: var(--customWhite);
+
+    background: var(--gradientBG);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ================button================ */
+button {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--customWhite);
+    
+    width: 80px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--lightOrange);
+
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    mix-blend-mode: multiply;
+}
+
+/* ================input================ */
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.error {
+    color: red;
+}
+
+/* ================box================ */
+
+.box1 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--lightBrown);
+
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+    color: black;
+}
+
+.box2 {
+
+    border-radius: 15px;
+    color: var(--customWhite);
+    
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 200px;
+    background-color: var(--lightBrown);
+
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--body);
+    line-height: 25px;
+}
+
+/* ================container================ */
+
+.container {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .icons {
+    max-width: 100px;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+
+/* ================navpane================ */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--gradientBG);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 14px 16px;
+
+    transition-duration: 0.2s;
+}
+
+li a:hover {
+    background-color:var(--shadowGreen);
+} 
+
+/* ================table================ */
+
+.tableStyle {
+    width: 90%;
+    border-collapse: collapse;
+    font-family: var(--body);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableStyle th, .tableStyle td {
+    padding: 12px 15px;
+}
+
+.tableStyle thead tr {
+    background-color: var(--darkGreen);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tableStyle tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-size: 25px;
+
+}
+
+.tableStyle tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tableStyle tbody tr:nth-of-type(odd) {
+    background-color: #eaf2f8;
+}
+
+.tableStyle tbody tr:last-of-type {
+    border-bottom: 2px solid var(--darkGreen)
+}
+
+.tableStyle tbody tr:hover {
+    background-color: #d1e7dd;
+    cursor: pointer;
+}
+
+.action-btn {
+    background-color: #4CAF50;
+    color: var(--customWhite);
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+}
+
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/signup.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:PHPSESSID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (288 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/signup.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (644 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=6t311rk8ogog9h7dgp2abi8jn4; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2142
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2142 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Sign Up&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;signup&quot;&gt;
+            &lt;h1&gt;Sign Up&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class=&quot;box1&quot;&gt;
+                            &lt;form method=&#39;post&#39; action=&#39;createUser.php&#39;&gt;
+                                &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;7fc2ec38719d01f0928a65f3a4bec0b594ec6e70702681f61858cfba96047a44&quot;&gt;
+                                
+                                &lt;input type = &#39;hidden&#39; id=&#39;userID&#39; name = &#39;userID&#39; /&gt;
+
+                                &lt;label for=&#39;fName&#39;&gt;First Name:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type = &#39;text&#39; id=&#39;fName&#39; name = &#39;fName&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                                                
+
+                                &lt;br&gt;&lt;br&gt;&lt;label for=&#39;lName&#39;&gt;Last Name:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type = &#39;text&#39; id=&#39;lName&#39; name = &#39;lName&#39; value = &#39;&#39;/&gt;
+                                
+                                &lt;br&gt;&lt;br&gt;&lt;label for=&#39;email&#39;&gt;Email:&lt;/label&gt;&lt;br&gt;
+                                &lt;input type = &#39;text&#39; id=&#39;email&#39; name = &#39;email&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                
+                                &lt;br&gt;&lt;br&gt;&lt;label for=&#39;password&#39;&gt;Password:&lt;/label&gt;
+                                &lt;input type = &#39;text&#39; id=&#39;password&#39; name = &#39;password&#39; /&gt;
+                                                    
+                                &lt;br&gt;&lt;br&gt;
+                    
+                                &lt;button class=&#39;createUser&#39; type=&#39;submit&#39;&gt; Sign up &lt;/a&gt;&lt;/button&gt;
+                                &lt;br&gt;
+                                &lt;button type=&quot;button&quot;&gt;
+                                    &lt;a href=&quot;index.php&quot;&gt;
+                                        Back
+                                    &lt;/a&gt;
+                                &lt;/button&gt;
+                            &lt;/form&gt;
+            &lt;/div&gt;  
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>6t311rk8ogog9h7dgp2abi8jn4</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (226 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (644 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:24:33 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=kusl3r8nu536oo3jvdbujnjev3; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1647
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1647 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Log In&lt;/title&gt;
+    &lt;/head&gt; 
+    &lt;body&gt;
+        &lt;div class=&quot;login&quot;&gt;
+            &lt;h1&gt;Log-in&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class=&quot;box1&quot;&gt;
+                        &lt;form method=&quot;post&quot; action=&quot;verifyLogin.php&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;36b80d184f96ebd698adb8e0a4669e77e94a644f5c6921cc372baa36479c3f9b&quot;&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;email&#39;&gt;Email:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = &#39;text&#39; id=&#39;email&#39; name = &#39;email&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                                
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;password&#39;&gt;Password:&lt;/label&gt;
+                            &lt;input type = &#39;password&#39; id=&#39;password&#39; name = &#39;password&#39; /&gt;
+                                                    
+                            &lt;br&gt;&lt;br&gt;
+                        
+                            &lt;button class=&quot;verifyLogin&quot; type=&quot;submit&quot;&gt; Login &lt;/button&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;
+
+                            &lt;button type=&quot;button&quot;&gt;
+                                &lt;a href=&quot;index.php&quot;&gt;
+                                    Back
+                                &lt;/a&gt;
+                            &lt;/button&gt;
+                            &lt;p&gt;No account yet? &lt;br&gt;
+                            &lt;a href=&quot;signup.php&quot;&gt;Sign up here!&lt;/a&gt;&lt;/p&gt;
+                        &lt;/form&gt;                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Authentication Request Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/focusQuest/createUser.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given request has been identified as an authentication request. The &#39;Other Info&#39; field contains a set of key=value lines which identify any relevant fields. If the request is in a context which has an Authentication Method set to &quot;Auto-Detect&quot; then this rule will change the authentication to match the request identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>userParam=email</p>
+
+<p>userValue=zaproxy@example.com</p>
+
+<p>passwordParam=password</p>
+
+<p>referer=http://localhost/focusQuest/signup.php</p>
+
+<p>csrfToken=csrf_token</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (364 bytes)</summary>
+				
+				<pre><code>POST http://localhost/focusQuest/createUser.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/focusQuest/signup.php
+content-length: 144
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (144 bytes)</summary>
+				
+				<pre><code>csrf_token=7fc2ec38719d01f0928a65f3a4bec0b594ec6e70702681f61858cfba96047a44&amp;userID=&amp;fName=ZAP&amp;lName=ZAP&amp;email=zaproxy%40example.com&amp;password=ZAP</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (666 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=29vi778l45uma2df3894rkbcni; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: logout.php
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>email</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>password</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/focusQuest/login.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/565.html">CWE-565</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was:</p>
+
+<p>localhost</p>
+
+<p>PHPSESSID=atlmr5pakj53fq4lu59dq2r9bt</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (287 bytes)</summary>
+				
+				<pre><code>GET http://localhost/focusQuest/login.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/focusQuest/index.php
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (644 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Fri, 07 Feb 2025 11:22:05 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;;
+X-Content-Type-Options: nosniff
+Set-Cookie: PHPSESSID=atlmr5pakj53fq4lu59dq2r9bt; path=/; secure; HttpOnly; SameSite=Strict
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 1647
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (1647 bytes)</summary>
+				
+				<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+        &lt;title&gt;Log In&lt;/title&gt;
+    &lt;/head&gt; 
+    &lt;body&gt;
+        &lt;div class=&quot;login&quot;&gt;
+            &lt;h1&gt;Log-in&lt;/h1&gt;
+            &lt;div&gt;
+                            &lt;/div&gt;
+            &lt;div class=&quot;box1&quot;&gt;
+                        &lt;form method=&quot;post&quot; action=&quot;verifyLogin.php&quot;&gt;
+                            &lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;bf4e798d3e180e796b3129c13e672b2629a76a3288777f1503fb795462ad0cc3&quot;&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;email&#39;&gt;Email:&lt;/label&gt;&lt;br&gt;
+                            &lt;input type = &#39;text&#39; id=&#39;email&#39; name = &#39;email&#39; value = &#39;&#39;/&gt;&lt;br&gt;
+                                                
+                            &lt;br&gt;&lt;br&gt;&lt;label for=&#39;password&#39;&gt;Password:&lt;/label&gt;
+                            &lt;input type = &#39;password&#39; id=&#39;password&#39; name = &#39;password&#39; /&gt;
+                                                    
+                            &lt;br&gt;&lt;br&gt;
+                        
+                            &lt;button class=&quot;verifyLogin&quot; type=&quot;submit&quot;&gt; Login &lt;/button&gt;
+                        
+                            &lt;br&gt;&lt;br&gt;
+
+                            &lt;button type=&quot;button&quot;&gt;
+                                &lt;a href=&quot;index.php&quot;&gt;
+                                    Back
+                                &lt;/a&gt;
+                            &lt;/button&gt;
+                            &lt;p&gt;No account yet? &lt;br&gt;
+                            &lt;a href=&quot;signup.php&quot;&gt;Sign up here!&lt;/a&gt;&lt;/p&gt;
+                        &lt;/form&gt;                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Hidden File Found</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/40035/">Hidden File Finder</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/538.html">538</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html">https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</a></li>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/mod_status.html">https://httpd.apache.org/docs/current/mod/mod_status.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a></li>
+										<li><a
+											href="https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">https://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Authentication Request Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10111/">Authentication Request Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/auth-req-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
