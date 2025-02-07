@@ -3,11 +3,6 @@
     header("X-Content-Type-Options: nosniff");
 
     session_start();
-    
-    if (!isset($_SESSION['userID'])) {
-        header("Location: logout.php");
-        exit();
-    }
 
     if (!isset($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
