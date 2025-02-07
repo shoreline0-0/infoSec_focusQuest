@@ -2,6 +2,7 @@
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
     header("X-Content-Type-Options: nosniff");
     
+    
     session_start();
     
     if (!isset($_SESSION['userID'])) {
