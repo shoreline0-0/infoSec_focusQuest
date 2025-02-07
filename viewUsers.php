@@ -2,6 +2,13 @@
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
     header("X-Content-Type-Options: nosniff");
     
+    session_start();
+    
+    if (!isset($_SESSION['userID'])) {
+        header("Location: logout.php");
+        exit();
+    }
+
     $timeout_duration = 300; 
 
     if (isset($_SESSION['LAST_ACTIVITY'])) {
@@ -16,6 +23,7 @@
     $_SESSION['LAST_ACTIVITY'] = time();
 
     include 'dbconn.php';
+    
     $sql = "SELECT * FROM users";
     $result = mysqli_query($conn,$sql);
 ?>

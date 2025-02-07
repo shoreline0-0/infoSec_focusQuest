@@ -1,4 +1,14 @@
 <?php
+    header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
+    header("X-Content-Type-Options: nosniff");
+    
+    session_start();
+    
+    if (!isset($_SESSION['userID'])) {
+        header("Location: logout.php");
+        exit();
+    }
+    
     $timeout_duration = 300; 
 
     if (isset($_SESSION['LAST_ACTIVITY'])) {
@@ -6,7 +16,7 @@
         if ($elapsed_time > $timeout_duration) {
             session_unset();
             session_destroy();
-            header("Location: index.php");
+            header("Location: logout.php");
             exit();
         }
     }
@@ -48,6 +58,22 @@
                     <button type="button">
                         <a href="viewDifficulty.php">
                             Difficulty
+                        </a>
+                    </button>
+                </div>
+                <div class="box2">
+                    <img src="assets/icon_access.png" class="icons">
+                    <button type="button">
+                        <a href="viewAccessLogs.php">
+                            Access Logs
+                        </a>
+                    </button>
+                </div>
+                <div class="box2">
+                    <img src="assets/icon_roles.png" class="icons">
+                    <button type="button">
+                        <a href="viewRoles.php">
+                            Roles
                         </a>
                     </button>
                 </div>

@@ -3,11 +3,24 @@
     header("X-Content-Type-Options: nosniff");
 
     session_start();
+
     if (!isset($_SESSION['csrf_token'])) {
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     }
 
     include 'dbconn.php';
+
+    $errors = $_SESSION['errors'] ?? "";
+    $fName = $_SESSION['fName'] ?? "";
+    $lName = $_SESSION['lName'] ?? "";
+    $email = $_SESSION['email'] ?? "";
+
+    unset(
+        $_SESSION['errors'],
+        $_SESSION['fName'],
+        $_SESSION['lName'],
+        $_SESSION['email']
+    );
 ?>
 
 <!DOCTYPE html>
@@ -20,28 +33,52 @@
     <body>
         <div class="signup">
             <h1>Sign Up</h1>
+            <div>
+                <?php if (isset($errors['general'])): ?>
+                    <p class="error"> <?php echo $_SESSION['csrf_token']?? ''; ?></p>
+                <?php endif; ?>
+            </div>
             <div class="box1">
-                            "<form method='post' action='createUser.php'>
+                            <form method='post' action='createUser.php'>
                                 <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
-                                <input type = 'hidden' id='userID' name = 'userID' /><br><br>
+                                
+                                <input type = 'hidden' id='userID' name = 'userID' />
 
                                 <label for='fName'>First Name:</label><br>
-                                <input type = 'text' id='fName' name = 'fName' /><br><br>
+                                <input type = 'text' id='fName' name = 'fName' value = '<?php echo htmlspecialchars($fName); ?>'/><br>
+                                <?php if (isset($errors['fName'])): ?>
+                                    <span class="error"> <?php echo $errors['fName']; ?></span><br>
+                                <?php endif; ?>
+                                
 
-                                <label for='lName'>Last Name:</label><br>
-                                <input type = 'text' id='flName' name = 'lName'  /><br><br>
+                                <br><br><label for='lName'>Last Name:</label><br>
+                                <input type = 'text' id='lName' name = 'lName' value = '<?php echo htmlspecialchars($lName); ?>'/>
+                                <?php if (isset($errors['lName'])): ?>
+                                    <span class="error"> <?php echo $errors['lName']; ?></span>
+                                <?php endif; ?>
 
-                                <label for='email'>Email:</label><br>
-                                <input type = 'text' id='email' name = 'email'  /><br><br>
+                                <br><br><label for='email'>Email:</label><br>
+                                <input type = 'text' id='email' name = 'email' value = '<?php echo htmlspecialchars($email); ?>'/><br>
+                                <?php if (isset($errors['email'])): ?>
+                                    <span class="error"> <?php echo $errors['email']; ?></span>
+                                <?php endif; ?>
 
-                                <label for='password'>Password:</label><br>
-                                <input type = 'password' id='password' name = 'password'  /><br><br>
-
+                                <br><br><label for='password'>Password:</label>
+                                <input type = 'text' id='password' name = 'password' />
+                                <?php if (isset($errors['password'])): ?>
+                                    <span class="error"> <?php echo $errors['password']; ?></span>
+                                <?php endif; ?>
                     
                                 <br><br>
                     
                                 <button class='createUser' type='submit'> Sign up </a></button>
-                            </form>";
+                                <br>
+                                <button type="button">
+                                    <a href="index.php">
+                                        Back
+                                    </a>
+                                </button>
+                            </form>
             </div>  
         </div>
     </body>

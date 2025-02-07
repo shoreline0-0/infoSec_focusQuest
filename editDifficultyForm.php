@@ -2,6 +2,13 @@
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
     header("X-Content-Type-Options: nosniff");
     
+    session_start();
+
+    if (!isset($_SESSION['userID'])) {
+        header("Location: logout.php");
+        exit();
+    }
+    
     $timeout_duration = 300; 
 
     if (isset($_SESSION['LAST_ACTIVITY'])) {
@@ -9,7 +16,7 @@
         if ($elapsed_time > $timeout_duration) {
             session_unset();
             session_destroy();
-            header("Location: index.php");
+            header("Location: logout.php");
             exit();
         }
     }
@@ -17,18 +24,22 @@
 
     include 'dbconn.php';
 
-    $difficultyID = $_POST['difficultyID'];
-    $penalty = $_POST['penalty'];
-    $maxDistractions = $_POST['maxDistractions'];
-    $goal = $_POST['goal'];
+    $errors = $_SESSION['errors'] ?? [];
+    unset($_SESSION['errors']);
 
-    $sql = "SELECT * FROM difficulty";
-    $result = mysqli_query($conn,$sql);
+    $difficultyID = $_POST['difficultyID'] ?? '';
+    $penalty = $_POST['penalty'] ?? ($_SESSION['penalty'] ?? '');
+    $maxDistractions = $_POST['maxDistractions'] ?? ($_SESSION['maxDistractions'] ?? ''); 
+    $goal = $_POST['goal'] ?? ($_SESSION['goal'] ?? ''); 
 
-    if (mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_assoc($result);
-    } else {
-        echo "No difficulty found.";
+    if ($difficultyID) {
+        $sql = "SELECT * FROM difficulty WHERE difficultyID = '$difficultyID'";
+        $result = mysqli_query($conn,$sql);
+        $difficulty = mysqli_fetch_assoc($result);
+
+        if (!$difficulty) {
+            echo "No difficulty found.";
+        }
     }
 ?>
 
@@ -42,31 +53,47 @@
     <body>
         <div class="login">
             <h1>Edit Difficulty</h1>
+            <div>
+                <?php if (isset($errors['general'])): ?>
+                    <p class="error"> <?php echo $_SESSION['csrf_token']?? ''; ?></p>
+                <?php endif; ?>
+            </div>
             <div class = box1>
-                <?php
-                        echo 
-                            "<form method='post' action='updateDifficulty.php'>
-                                <label for='difficultyID'> Difficulty:</label><br>
-                                <input type = 'text', name = 'difficultyID' value = '". $_POST['difficultyID']. "' readonly/><br><br>
+                <form method="post" action="updateDifficulty.php">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                    <input type="hidden" name="difficultyID" value="<?= htmlspecialchars($difficulty['difficultyID']) ?>" readonly/>
 
-                                <label for='penalty'>Penalty:</label><br>
-                                <input type = 'text', name = 'penalty', value='". $_POST["penalty"] ."' /><br><br>
+                    <label for="penalty">Penalty:</label><br>
+                    <input type="text" name="penalty" value="<?= htmlspecialchars($penalty) ?>" /><br>
+                    <?php if (isset($errors['penalty'])): ?>
+                        <span class="error"><?= $errors['penalty'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-                                <label for='maxDistractions'>Distractions:</label><br>
-                                <input type = 'text', name = 'maxDistractions'  value='". $_POST["maxDistractions"] ."' /><br><br>
+                    <label for="maxDistractions">Distractions:</label><br>
+                    <input type="text" name="maxDistractions" value="<?= htmlspecialchars($maxDistractions) ?>" /><br>
+                    <?php if (isset($errors['maxDistractions'])): ?>
+                        <span class="error"><?= $errors['maxDistractions'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-                                <label for='goal'>Goal:</label><br>
-                                <input type = 'text', name = 'goal'  value='". $_POST["goal"] ."' /><br><br>
+                    <label for="goal">Goal:</label><br>
+                    <input type="text" name="goal" value="<?= htmlspecialchars($goal) ?>" /><br>
+                    <?php if (isset($errors['goal'])): ?>
+                        <span class="error"><?= $errors['goal'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-                                <button type='submit' class='updateDifficulty'>Update</button>
-                                <br>
-                                <button onclick='history.back()'>Go Back</button>
-                            </form>";
-                    
-                ?>
+                    <button type='submit' class='updateDifficulty'>Update</button>
+                    <br>
+                    <button type='button'>
+                        <a href='viewDifficulty.php'>
+                            Back
+                        </a>
+                    </button>
+                </form>
             </div>
         </div>
     </body>
 </html>
-
 

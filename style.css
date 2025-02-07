@@ -109,6 +109,10 @@ input {
     border: none;
 }
 
+.error {
+    color: red;
+}
+
 /* ================box================ */
 
 .box1 {

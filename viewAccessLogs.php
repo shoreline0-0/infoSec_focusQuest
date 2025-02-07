@@ -24,7 +24,7 @@
 
     include 'dbconn.php';
     
-    $sql = "SELECT * FROM gamelog";
+    $sql = "SELECT * FROM access_logs";
     $result = mysqli_query($conn,$sql);
 ?>
 
@@ -37,21 +37,20 @@
             <li><a href="home.php">Home</a></li>
         </ul>
         <link rel="stylesheet" href="style.css">
-        <title>Manage - Gamelogs</title>
+        <title>View - Access Logs</title>
     </head>
     <body>
-        <div class="gamelogs">
-            <h2>Manage Gamelogs</h2>
+        <div class="accessLogs">
+            <h2>View Access Logs</h2>
             <table class="tableStyle">
                 <thead>
                     <tr>
-                        <th> Log ID </th>
+                        <th> Access ID </th>
                         <th> User </th>    
-                        <th> Difficulty  </th>
-                        <th> Score </th>
-                        <th> Timestamp </th>
+                        <th> Role  </th>
+                        <th> Log Time </th>
                         <th> Status </th>
-                        <th> Actions </th>
+                        <th> Access Type </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,23 +58,12 @@
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
                                 echo "<tr>";
-                                    echo "<td>" . $row["logID"] . "</td>";
+                                    echo "<td>" . $row["accessID"] . "</td>";
                                     echo "<td>" . $row["userID"] . "</td>";
-                                    echo "<td>" . $row["difficultyID"] . "</td>";
-                                    echo "<td>" . $row["score"] . "</td>";
-                                    echo "<td>" . $row["timestamp"] . "</td>";
+                                    echo "<td>" . $row["roleID"] . "</td>";
+                                    echo "<td>" . $row["logTime"] . "</td>";
                                     echo "<td>" . $row["status"] . "</td>";
-                                echo "<td> 
-                                        <form method='post' action='deleteGamelog.php'>
-                                            <input type = 'hidden', name = 'logID' value = '". $row['logID']. "'/>
-                                            <input type = 'hidden', name = 'userID' value = '". $row['userID']. "'/>      
-                                            <input type = 'hidden', name = 'difficultyID' value = '". $row['difficultyID']. "'/>
-                                            <input type = 'hidden', name = 'score' value = '". $row['score']. "'/>
-                                            <input type = 'hidden', name = 'timestamp' value = '". $row['timestamp']. "'/>
-                                            <input type = 'hidden', name = 'status' value = '". $row['status']. "'/>
-                                            <button type='submit'>Delete</button>
-                                        </form>
-                                      </td>";
+                                    echo "<td>" . $row["accessType"] . "</td>";
                                 echo "<tr>";
                             }
                         } else {

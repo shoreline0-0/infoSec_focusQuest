@@ -2,6 +2,13 @@
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
     header("X-Content-Type-Options: nosniff");
     
+    session_start();
+
+    if (!isset($_SESSION['userID'])) {
+        header("Location: logout.php");
+        exit();
+    }
+    
     $timeout_duration = 300; 
 
     if (isset($_SESSION['LAST_ACTIVITY'])) {
@@ -9,7 +16,7 @@
         if ($elapsed_time > $timeout_duration) {
             session_unset();
             session_destroy();
-            header("Location: index.php");
+            header("Location: logout.php");
             exit();
         }
     }
@@ -17,18 +24,24 @@
 
     include 'dbconn.php';
 
-    $fName = $_POST['fName'];
-    $lName = $_POST['lName'];
-    $email = $_POST['email'];
-    $roleID = $_POST['roleID'];
-    
-    $sql = "SELECT * FROM users";
-    $result = mysqli_query($conn,$sql);
+    $errors = $_SESSION['errors'] ?? [];
+    unset($_SESSION['errors']);
 
-    if (mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_assoc($result);
-    } else {
-        echo "No user found.";
+    $userID = $_POST['userID'] ?? ($_SESSION['userID'] ?? '');
+    $fName = $_POST['fName'] ?? ($_SESSION['fName'] ?? '');
+    $lName = $_POST['lName'] ?? ($_SESSION['lName'] ?? ''); 
+    $email = $_POST['email'] ?? ($_SESSION['email'] ?? ''); 
+    $roleID = $_POST['roleID'] ?? ($_SESSION['roleID'] ?? ''); 
+
+
+    if ($userID) {
+        $sql = "SELECT * FROM users WHERE userID = '$userID'";
+        $result = mysqli_query($conn,$sql);
+        $user = mysqli_fetch_assoc($result);
+
+        if (!$user) {
+            echo "No user found.";
+        }
     }
 ?>
 
@@ -42,32 +55,52 @@
     <body>
         <div class="login">
             <h1>Edit User</h1>
+            <div>
+                <?php if (isset($errors['general'])): ?>
+                    <p class="error"> <?php echo $_SESSION['csrf_token']?? ''; ?></p>
+                <?php endif; ?>
+            </div>
             <div class = box1>
-                <?php
-                        echo 
-                            "<form method='post' action='updateUser.php'>
-                                <label for='userID'>User ID:</label><br>
-                                <input type = 'text', name = 'userID' value = '". $_POST['userID']. "' readonly/><br><br>
+                <form method="post" action="updateUser.php">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                    <input type="hidden" name="userID" value="<?= htmlspecialchars($user['userID']) ?>" readonly/>
 
-                                <label for='fName'>First Name:</label><br>
-                                <input type = 'text', name = 'fName', value='". $_POST["fName"] ."' /><br><br>
+                    <label for="fName">First Name:</label><br>
+                    <input type="text" name="fName" value="<?= htmlspecialchars($fName) ?>" /><br>
+                    <?php if (isset($errors['fName'])): ?>
+                        <span class="error"><?= $errors['fName'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-                                <label for='lName'>Last Name:</label><br>
-                                <input type = 'text', name = 'lName'  value='". $_POST["lName"] ."' /><br><br>
+                    <label for="lName">Last Name:</label><br>
+                    <input type="text" name="lName" value="<?= htmlspecialchars($lName) ?>" /><br>
+                    <?php if (isset($errors['lName'])): ?>
+                        <span class="error"><?= $errors['lName'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-                                <label for='email'>Email:</label><br>
-                                <input type = 'text', name = 'email'  value='". $_POST["email"] ."' /><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" name="email" value="<?= htmlspecialchars($email) ?>" /><br>
+                    <?php if (isset($errors['email'])): ?>
+                        <span class="error"><?= $errors['email'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-                                <label for='roleID'>Role:</label><br>
-                                <input type = 'text', name = 'roleID'  value='". $_POST["roleID"] ."' /><br><br>
+                    <label for="roleID">Role:</label><br>
+                    <input type="text" name="roleID" value="<?= htmlspecialchars($roleID) ?>" /><br>
+                    <?php if (isset($errors['roleID'])): ?>
+                        <span class="error"><?= $errors['roleID'] ?></span><br>
+                    <?php endif; ?>
+                    <br>
 
-
-                                <button type='submit' class='updateUser'>Update</button>
-                                <br>
-                                <button onclick='history.back()'>Go Back</button>
-                            </form>";
-                    
-                ?>
+                    <button type='submit' class='updateUser'>Update</button>
+                    <br>
+                    <button type='button'>
+                        <a href='viewUsers.php'>
+                            Back
+                        </a>
+                    </button>
+                </form>
             </div>
         </div>
     </body>
