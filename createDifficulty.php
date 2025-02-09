@@ -27,7 +27,6 @@
     $errors = [];
     $penalty = $maxDistractions = $goal = "";
 
-    var_dump($_POST);
     $sql = "SELECT * FROM users";
     $result = mysqli_query($conn,$sql);
 

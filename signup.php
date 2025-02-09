@@ -65,7 +65,7 @@
                                 <?php endif; ?>
 
                                 <br><br><label for='password'>Password:</label>
-                                <input type = 'text' id='password' name = 'password' />
+                                <input type = 'password' id='password' name = 'password' />
                                 <?php if (isset($errors['password'])): ?>
                                     <span class="error"> <?php echo $errors['password']; ?></span>
                                 <?php endif; ?>
