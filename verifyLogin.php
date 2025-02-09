@@ -1,16 +1,14 @@
 <?php
     header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';");
     header("X-Content-Type-Options: nosniff");
-    setcookie("cookie_name", "cookie_value", ['expires' => time() + 3600, 'path' => '/', 'domain' => '','secure' => false, 'httponly' => true,'samesite' => 'Lax'        ]);
-    
-    session_start();
+    session_set_cookie_params([ 'lifetime' => 0, 'path' => '/',  'domain' => '',  'secure' => true, 'httponly' => true, 'samesite' => 'Strict' ]);    session_start();
 
     include 'dbconn.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if ($_POST['csrf_token'] !== $_SESSION['csrf_token']) {
-            die("Invalid CSRF token.");
-        }
+        // if ($_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+        //     die("Invalid CSRF token.");
+        // }
 
         include 'dbconn.php';
         $errors = [];

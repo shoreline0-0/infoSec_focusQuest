@@ -26,6 +26,7 @@
 
 <!DOCTYPE html>
 <html>
+    <meta http-equiv="refresh" content="300;url=index.php">
     <head>
         <ul>
             <li><a href="index.php">Log out</a></li>
